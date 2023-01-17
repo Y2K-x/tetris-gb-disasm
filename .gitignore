@@ -4,3 +4,5 @@ tetris.sym
 temp.s
 
 __pycache__/
+
+disasm/.vscode/
