@@ -1,5 +1,9 @@
 
 GameState24_CopyrightDisplay:
+; switch to bank 1 for graphics data	
+	ld a, $1
+	ld [rROMB0], a
+	
 	call TurnOffLCD                                                 ; $0369
 
 	call CopyAsciiAndTitleScreenTileData                            ; $036c
@@ -63,6 +67,10 @@ GameState35_CopyrightCanContinue:
 
 
 GameState06_TitleScreenInit:
+; switch to bank 1 for graphics data	
+	ld a, $1
+	ld [rROMB0], a
+	
 	call TurnOffLCD                                                 ; $03ae
 
 ; reset some vars

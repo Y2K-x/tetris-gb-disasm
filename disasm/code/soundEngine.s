@@ -1,7 +1,7 @@
 INCLUDE "includes.s"
 
 ;SECTION "Sound Engine", ROMX[$6480], BANK[$1]
-SECTION "Sound Engine", ROM0[$2B64]
+SECTION "Sound Engine", ROM0
 
 SquareSoundEffectTable_Init:
 	dw SquareEffectInit_MovingSelection

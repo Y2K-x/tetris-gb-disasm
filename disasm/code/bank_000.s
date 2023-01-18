@@ -852,6 +852,10 @@ StoreBinHLwhenLCDFree:
 
 
 GameState0a_InGameInit:
+; switch to bank 1 for graphics data	
+	ld a, $1
+	ld [rROMB0], a
+	
 ; turn off lcd and clear some in-game vars
 	call TurnOffLCD                                                 ; $1a07
 	xor  a                                                          ; $1a0a
