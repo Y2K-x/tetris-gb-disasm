@@ -55,7 +55,6 @@ Demo1Inputs:
 	db $00, $00, $10, $3d, $00, $05, $80, $1f
 	
 
-print @
 SECTION "Demo Pieces", ROMX[$4180], BANK[$3]
 
 DemoPieces::

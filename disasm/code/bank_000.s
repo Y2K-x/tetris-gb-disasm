@@ -193,13 +193,13 @@ HeaderSGBFlag::
 	db   $00
 
 HeaderCartridgeType::
-	db   $00
+	db   CART_ROM_MBC1
 
 HeaderROMSize::
-	db   $00
+	db   CART_ROM_512K
 
 HeaderRAMSize::
-	db   $00
+	db   CART_RAM_NONE
 
 HeaderDestinationCode::
 	db   $00
