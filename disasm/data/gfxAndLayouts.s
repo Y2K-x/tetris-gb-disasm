@@ -1,4 +1,5 @@
-SECTION "Graphics and Layouts", ROM0[$323f]
+;SECTION "Graphics and Layouts", ROM0[$323f]
+SECTION "Graphics and Layouts", ROMX[$46DB], BANK[$1]
 
 Gfx_MenuScreens:
 	INCBIN "build/menuScreens.2bpp"
@@ -7,14 +8,15 @@ Gfx_MenuScreens:
 Layout_ATypeInGame:
 	INCBIN "data/layout_aTypeInGame.bin"
 
-STATIC_ASSERT $4000-@ == BANK_0_END_LEN
+;STATIC_ASSERT $4000-@ == BANK_0_END_LEN
 Layout_BTypeInGame::
-	INCBIN "data/layout_bTypeInGame.bin", 0, $4000-@
+	;INCBIN "data/layout_bTypeInGame.bin", 0, $4000-@
+	INCBIN "data/layout_bTypeInGame.bin"
 
     
-SECTION "ROM Bank $001", ROMX[$4000], BANK[$1]
+;SECTION "ROM Bank $001", ROMX[$4000], BANK[$1]
 
-	INCBIN "data/layout_bTypeInGame.bin", BANK_0_END_LEN
+	;INCBIN "data/layout_bTypeInGame.bin", BANK_0_END_LEN
 
 Gfx_Ascii::
 	INCBIN "build/ascii.1bpp"

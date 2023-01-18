@@ -1,3 +1,5 @@
+SECTION "Sprite Data", ROMX[$4000], BANK[$1]
+
 ; last data table byte == $fd - x flip next tile
 ; last data table byte == $fe - skip next coords
 ; last data table byte == $ff - end
@@ -931,3 +933,4 @@ SpriteCoords_39:
 SpriteCoords_40:
 SpriteCoords_41:
 	db $00, $00, $00, $08, $00, $10, $08, $00, $08, $08, $08, $10, $10, $00, $10, $08, $10, $10
+print @

@@ -1,6 +1,7 @@
 INCLUDE "includes.s"
 
-SECTION "Sound Engine", ROMX[$6480], BANK[$1]
+;SECTION "Sound Engine", ROMX[$6480], BANK[$1]
+SECTION "Sound Engine", ROM0[$2B64]
 
 SquareSoundEffectTable_Init:
 	dw SquareEffectInit_MovingSelection
@@ -2110,11 +2111,11 @@ WriteToFrequencyRegsAdjustedWithEnvelope:
 	ldh  [c], a                                                     ; $6dc8
 	jr   .done                                                      ; $6dc9
 
-
 INCLUDE "data/songData.s"
 
 
-SECTION "Sound Thunk Funcs", ROMX[$7ff0], BANK[$1]
+;SECTION "Sound Thunk Funcs", ROMX[$7ff0], BANK[$1]
+SECTION "Sound Thunk Funcs", ROM0[$34AF]
 
 ThunkUpdateSound::
 	jp   UpdateSound                                                ; $7ff0
