@@ -690,6 +690,8 @@ DemoSendPingsAndEndAfterAllStepsDone:
 
 
 DemoPollInput:
+	ld a, $3
+	ld [rROMB0], a
 ; proceed if demo played
 	ldh  a, [hPrevOrCurrDemoPlayed]                                 ; $0542
 	and  a                                                          ; $0544
@@ -855,7 +857,7 @@ GameState0a_InGameInit:
 ; switch to bank 1 for graphics data	
 	ld a, $1
 	ld [rROMB0], a
-	
+
 ; turn off lcd and clear some in-game vars
 	call TurnOffLCD                                                 ; $1a07
 	xor  a                                                          ; $1a0a

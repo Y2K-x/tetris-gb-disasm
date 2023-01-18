@@ -11,6 +11,10 @@ GameState24_CopyrightDisplay:
 	call CopyLayoutToScreen0                                        ; $0372
 	call Clear_wOam                                                 ; $0375
 
+; switch to demo pieces bank
+	ld a, $3
+	ld [rROMB0], a
+	
 ; set demo pieces
 	ld   hl, wDemoOrMultiplayerPieces                               ; $0378
 	ld   de, DemoPieces                                             ; $037b
@@ -155,6 +159,10 @@ GameState06_TitleScreenInit:
 
 
 PlayDemo:
+;load demo pieces & inputs bank
+	ld a, $3
+	ld [rROMB0], a
+
 	ld   a, GAME_TYPE_A_TYPE                                        ; $041f
 	ldh  [hGameType], a                                             ; $0421
 
