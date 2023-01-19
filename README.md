@@ -5,6 +5,8 @@ This fork & branch of vinheim3's Tetris disassembly aims to create a base for po
 * Place `tetris.gb` in the `tools/` directory, and `web/` directory
 * Former is used for scripts, and `tools/cmp.sh`, and the latter for web visualisations
 
+# Building
+* Install RGBDS v0.6.1
 ## Building
 * Install rgbds v0.5.1
 * Run `make` within the `disasm` directory
