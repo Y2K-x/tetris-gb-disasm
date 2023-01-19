@@ -7,8 +7,6 @@ This fork & branch of vinheim3's Tetris disassembly aims to create a base for po
 
 # Building
 * Install RGBDS v0.6.1
-## Building
-* Install rgbds v0.5.1
 * Run `make` within the `disasm` directory
 * Run `tools/cmp.sh` to compare built ROM against original ROM
 
