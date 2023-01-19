@@ -1,4 +1,4 @@
-# Tetris MBC1
+# Tetris MBC5
 This fork & branch of vinheim3's Tetris disassembly aims to create a base for possible future modding endeavors. The base game has very little room left over to implement anything worthwhile, so this branch restructures the game to allow for additional code and assets.
 
 ## Common

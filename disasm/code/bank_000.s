@@ -193,7 +193,7 @@ HeaderSGBFlag::
 	db   $00
 
 HeaderCartridgeType::
-	db   CART_ROM_MBC1
+	db   CART_ROM_MBC5
 
 HeaderROMSize::
 	db   CART_ROM_512K
